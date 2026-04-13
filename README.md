@@ -29,3 +29,19 @@ promocion-bi/             # CSV o notas sobre qué subir al BI (La-Internacional
 ## Relación con el BI
 
 Proyecto web: `../La-Internacional-BI`. Los datos que consuma la app viven en ese repo (`data/public/`); aquí solo se **documenta** qué se promovió y cuándo.
+
+## Exportar minuta a PDF (arte alineado al documento corporativo)
+
+El script usa **Arial**, color de título **#1B3A5C** y cabecera/pie tipo *Solicitud La Internacional Definitivo v2* (mismo criterio visual que el PDF en `../Info`).
+
+Requisitos: **Python 3** + fuentes Arial en `C:\Windows\Fonts` (Windows).
+
+```bash
+cd la-internacional-reporteria
+pip install -r requirements.txt
+python scripts/generar_minuta_pdf.py
+```
+
+Por defecto lee `reuniones/2026/minuta-2026-04-14-presentacion-gerencia-actuarial.md` y escribe el `.pdf` junto al markdown. Rutas opcionales:
+
+`python scripts/generar_minuta_pdf.py ruta\entrada.md ruta\salida.pdf`
