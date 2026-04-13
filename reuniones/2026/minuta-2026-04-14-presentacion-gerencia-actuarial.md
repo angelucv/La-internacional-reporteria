@@ -1,4 +1,4 @@
-# ACTA DE REUNIÓN — GERENCIA ACTUARIAL
+# MINUTA DE REUNIÓN — MESA ACTUARIAL
 
 **La Internacional de Seguros** · Reportería y seguimiento  
 
@@ -7,7 +7,7 @@
 | **Referencia** | MIN-ACT-2026-001 |
 | **Fecha** | 2026-04-14 *(ajustar si aplica)* |
 | **Lugar / modalidad** | *(completar)* |
-| **Asunto** | Presentación formal y visión general de la Gerencia Actuarial |
+| **Asunto** | Presentación formal — Mesa Actuarial (visión general de la gerencia) |
 | **Participantes** | **Lic. Yaritza Oberto**, Gerente Actuarial · **Angel Colmenares**, seguimiento y reportería |
 
 ---
@@ -33,13 +33,13 @@ Presentación formal ante la **Lic. Yaritza Oberto** (Gerente Actuarial) y compr
 
 ## 3. Puntos tratados
 
-- **Requerimientos:** la gerencia ya dispone de la **lista de requerimientos**; el trabajo de entrega sigue en curso. En el momento de la reunión la prioridad operativa era la **entrega para inspecciones generales de SUDEASEG**, con **fecha tope el miércoles**; tras cumplir ese envío se podrá dedicar **mayor detalle** a los requerimientos. Lo solicitado se **alinea** con lo pedido por **SUDEASEG**.
+- **Requerimientos e inspecciones SUDEASEG:** la gerencia ya dispone de la **lista de requerimientos**; el trabajo de entrega sigue en curso. La prioridad operativa era la **entrega para inspecciones generales de SUDEASEG**, con **fecha tope el miércoles**. **A partir del miércoles, funcionarios de SUDEASEG estarán en las instalaciones de La Internacional** para dichas inspecciones. Tras cumplir ese envío se podrá dedicar **mayor detalle** a los requerimientos; lo solicitado se **alinea** con lo pedido por **SUDEASEG**.
 
-- **Calendario de reuniones:** se acordó **nueva reunión al día siguiente**; a partir del **miércoles**, con funcionarios de **SUDEASEG** en la compañía, se trabajará con la **información disponible** el resto de la semana.
+- **Calendario de trabajo:** se acordó **nueva reunión al día siguiente**; durante el **resto de la semana** se continuará con la **información disponible** en el marco de la visita y las prioridades acordadas.
 
-- **Reportería:** existe **reportería mensual**; se remitió material de referencia — **cierre 2025** y **cierre marzo** — según **correo 1** y **correo 2** en la carpeta **`Reportes`**. Queda **pendiente** remitir reportería de **frecuencia semanal**.
+- **Reportería mensual:** mediante **correo remitido en fecha [completar]** se envió material de referencia, incluyendo información de **cierre 2025** y **cierre marzo** [indicar brevemente tipo de archivos o reportes adjuntos]. Queda **pendiente** remitir reportería de **frecuencia semanal**.
 
-- **Productos:** se describieron **en líneas generales** los distintos productos; se solicitó **detalle por escrito**, remitido según **correo 3** en **`Reportes`**. Se mencionó el producto de **salud internacional**, centralizado con **Redbridge**, como contexto posible para la información del archivo **«Resumen de pagos Reaseguros año 2025 Juan»**. Algunos productos están **a la espera de aprobación SUDEASEG**; conviene acotar estatus tras la **mesa legal**.
+- **Productos:** se describieron **en líneas generales** los distintos productos; se solicitó **detalle por escrito**, recibido en **correo de fecha [completar]** con la relación solicitada. Se mencionó el producto de **salud internacional**, centralizado con **Redbridge**, en relación con el material **«Resumen de pagos Reaseguros año 2025 Juan»**. Algunos productos están **a la espera de aprobación SUDEASEG**; conviene acotar estatus tras la **mesa legal**.
 
 - **Herramientas:** los reportes se elaboran hoy principalmente en **Excel**; existe interés en **automatización** de reportería y contacto previo con proveedor para **Power BI**. Se informó la posibilidad de valorar **herramientas de software libre** — punto a **elevar** para decisión.
 
@@ -49,24 +49,24 @@ Presentación formal ante la **Lic. Yaritza Oberto** (Gerente Actuarial) y compr
 
 1. **Prioridad inmediata:** cerrar los **reportes e insumos para inspecciones SUDEASEG** (insumo para **mesas de trabajo** y revisiones).
 2. Tras esa entrega, retomar con **mayor detalle** la **lista de requerimientos** ya recibidos.
-3. **Archivos ya remitidos:** quedan **requeridos/registrados** los envíos ya recibidos por el responsable de seguimiento.
+3. **Correspondencia recibida:** quedan **registrados** los envíos ya recibidos por **correo** por el responsable de seguimiento.
 4. **Seguimiento:** **reuniones concretas al día siguiente** para avanzar en la **lista de recaudos** solicitados.
 
 ---
 
-## 5. Anexos y referencias (carpeta local)
+## 5. Referencias de correspondencia
 
-| Referencia | Ubicación |
+| Tema | Registro |
 |:-----------|:----------|
-| Correos 1 y 2 — cierre 2025 y cierre marzo | `C:\Users\PC\Projects\0-La internacional\Reportes` *(correo 1 y 2)* |
-| Correo 3 — detalle de productos | Misma carpeta *(correo 3)* |
-| Documentación interna complementaria | `C:\Users\PC\Projects\0-La internacional\Info` |
+| Cierres 2025 y marzo (reportería mensual) | Correo de fecha [completar] — adjuntos según mensaje |
+| Detalle de productos | Correo de fecha [completar] — adjuntos según mensaje |
+| Documentación interna de apoyo | Según gestión documental de la compañía |
 
 ---
 
 ## 6. Próxima sesión
 
-**Fecha:** al día siguiente a esta acta *(ajustar)* · **Enfoque:** avance en **lista de recaudos** y continuidad según disponibilidad posterior a **SUDEASEG**.
+**Fecha:** al día siguiente a esta minuta *(ajustar)* · **Enfoque:** avance en **lista de recaudos** y continuidad según disponibilidad posterior a **SUDEASEG**.
 
 ---
 

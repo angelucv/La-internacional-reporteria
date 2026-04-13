@@ -301,7 +301,7 @@ def _header_footer(canvas, doc) -> None:
     width, height = LETTER
     # Cabecera interior (como página 3 del modelo)
     canvas.drawString(54, height - 42, "La Internacional de Seguros, S.A.")
-    canvas.drawRightString(width - 54, height - 42, "Acta de reunión — Gerencia Actuarial · MIN-ACT-2026-001")
+    canvas.drawRightString(width - 54, height - 42, "Minuta de reunión — Mesa Actuarial · MIN-ACT-2026-001")
     # Pie
     canvas.setFont("Arial", 8)
     text = f"Confidencial · Página {canvas.getPageNumber()}"
@@ -341,7 +341,7 @@ def build_pdf(md_path: Path, out_path: Path) -> None:
         rightMargin=54,
         topMargin=56,
         bottomMargin=50,
-        title="Acta de reunión — Gerencia Actuarial",
+        title="Minuta de reunión — Mesa Actuarial",
         author="Angel Colmenares",
     )
 
