@@ -30,8 +30,23 @@ FOOTER_GRAY = colors.HexColor("#555555")
 MUTED_LINE = colors.HexColor("#888888")
 
 ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_MD = ROOT / "reuniones" / "2026" / "minuta-2026-04-14-presentacion-gerencia-actuarial.md"
-DEFAULT_OUT = ROOT / "reuniones" / "2026" / "minuta-2026-04-14-presentacion-gerencia-actuarial.pdf"
+DEFAULT_MD = ROOT / "reuniones" / "2026" / "MIN-POR-ACT-20260414-01.md"
+DEFAULT_OUT = ROOT / "reuniones" / "2026" / "MIN-POR-ACT-20260414-01.pdf"
+
+# Referencia leída del markdown (cabecera PDF)
+_REF_DOC: str = ""
+
+
+def _parse_referencia(md_text: str) -> str:
+    """Extrae el valor de | **Referencia** | código | en la tabla inicial."""
+    for line in md_text.splitlines():
+        if "Referencia" not in line or "|" not in line:
+            continue
+        cells = [c.strip() for c in line.split("|")]
+        cells = [c for c in cells if c]
+        if len(cells) >= 2 and "Referencia" in cells[0]:
+            return cells[1].strip()
+    return ""
 
 # Windows Arial (mismo criterio que el Word/PDF modelo)
 _ARIAL = Path(r"C:\Windows\Fonts\arial.ttf")
@@ -299,9 +314,14 @@ def _header_footer(canvas, doc) -> None:
     canvas.setFillColor(FOOTER_GRAY)
     canvas.setFont("Arial", 8)
     width, height = LETTER
+    ref = _REF_DOC or "—"
     # Cabecera interior (como página 3 del modelo)
     canvas.drawString(54, height - 42, "La Internacional de Seguros, S.A.")
-    canvas.drawRightString(width - 54, height - 42, "Minuta de reunión — Mesa Actuarial · MIN-ACT-2026-001")
+    canvas.drawRightString(
+        width - 54,
+        height - 42,
+        f"Minuta de reunión — Mesa Actuarial · {ref}",
+    )
     # Pie
     canvas.setFont("Arial", 8)
     text = f"Confidencial · Página {canvas.getPageNumber()}"
@@ -320,9 +340,11 @@ def _first_page(canvas, doc) -> None:
 
 
 def build_pdf(md_path: Path, out_path: Path) -> None:
+    global _REF_DOC
     _register_fonts()
     styles = _styles()
     md_text = md_path.read_text(encoding="utf-8")
+    _REF_DOC = _parse_referencia(md_text)
 
     story: list = _cover_block(md_text, styles)
 

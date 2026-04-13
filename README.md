@@ -42,6 +42,8 @@ pip install -r requirements.txt
 python scripts/generar_minuta_pdf.py
 ```
 
-Por defecto lee `reuniones/2026/minuta-2026-04-14-presentacion-gerencia-actuarial.md` y escribe el `.pdf` junto al markdown. Rutas opcionales:
+Codificación de referencias (`MIN-POR-ACT-20260414-01`, etc.): ver **`CODIGOS.md`**.
+
+Por defecto lee `reuniones/2026/MIN-POR-ACT-20260414-01.md` y escribe el `.pdf` junto al markdown. Rutas opcionales:
 
 `python scripts/generar_minuta_pdf.py ruta\entrada.md ruta\salida.pdf`
