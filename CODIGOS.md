@@ -11,20 +11,10 @@ Todos los entregables bajo este plan comparten el vínculo **POR** (*Plan de Opt
 | Segmento | Significado | Ejemplos |
 |----------|-------------|----------|
 | **TIPO** | Tipo de documento | `MIN` minuta · `REQ` requerimiento · `ENT` entrega |
-| **POR** | Plan de Optimización y Rentabilidad (fijo) | `POR` |
+| **POR** | Siglas de **Plan de Optimización y Rentabilidad** (segmento fijo) | `POR` |
 | **MESA** | Mesa o área | `ACT` actuarial · `LEG` legal · `FIN` financiera · `TEC` tecnología · `MKT` mercadeo · `CUM` cumplimiento |
 | **AAAAMMDD** | Fecha ancla (reunión, corte o envío acordado) | `20260414` |
 | **NN** | Correlativo del mismo día, mesa y tipo (`01`, `02`…) | `01` |
-
-### Opcional — fecha de entrega comprometida
-
-Si el documento asume un plazo explícito:
-
-```
-{TIPO}-POR-{MESA}-{AAAAMMDD}-{NN}-E{AAAAMMDD}
-```
-
-Ejemplo: `MIN-POR-ACT-20260414-01-E20260416`
 
 ## Ejemplo
 
