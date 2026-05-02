@@ -17,6 +17,15 @@ Este archivo resume **qué existe en el proyecto**, **en qué orden se construy�
 
 ---
 
+## 2026-05-02 (workspace padre + reportería — equipo operativo Mercadeo)
+
+- **Nuevo repo hermano** en la raíz del workspace LIS: **`por-equipo-mercadeo-operativo/`** (`git init` + primer commit local): `README.md`, `CONTEXTO-EQUIPO-MERCADEO-POR.md`, `REGISTRO-ACTIVIDADES.md`, `.gitignore`.
+- **Minuta mesa Mercadeo:** `reuniones/2026/MIN-POR-MKT-20260430-01.md` (Sesión Mercadeo 2026-04-30, equipo operativo POR).
+- **Padre documental:** `DOCUMENTO-MAESTRO-CONTEXTO-PROYECTO-la-internacional.md` (§1, §2, §3, §4.10, §5, §7, historial), `AGENTS.md`, `GUIA-SUBPROYECTOS-LA-INTERNACIONAL.md`, `ESTADO-ULTIMA-ACTIVIDAD.md`; regla Cursor **`../.cursor/rules/por-equipo-mercadeo-operativo-lis.mdc`**.
+- **Pendiente:** `git commit` en `la-internacional-reporteria` si el equipo consolida la minuta; crear **remoto GitHub** para `por-equipo-mercadeo-operativo` y empuje según bitácora de sincronía (`instrucciones-cursor/ESTADO-SINCRONIA-ACTUAL.md`).
+
+---
+
 ## 2026-04-13 (histórico Git — día de arranque del repo)
 
 Orden cronológico de commits (de más antiguo a más reciente). Todo ocurrió el mismo día calendario.
