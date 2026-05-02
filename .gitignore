@@ -1,3 +1,6 @@
+__pycache__/
+*.py[cod]
+
 # Sistema
 Thumbs.db
 .Desktop.ini

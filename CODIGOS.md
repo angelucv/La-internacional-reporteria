@@ -16,12 +16,14 @@ Todos los entregables bajo este plan comparten el vínculo **POR** (*Plan de Opt
 | **AAAAMMDD** | Fecha ancla (reunión, corte o envío acordado) | `20260414` |
 | **NN** | Correlativo del mismo día, mesa y tipo (`01`, `02`…) | `01` |
 
-## Ejemplo
+## Ejemplos (mesa actuarial)
 
-`MIN-POR-ACT-20260414-01` → Primera minuta del plan POR, mesa actuarial, fecha 14-04-2026.
+`MIN-POR-ACT-20260413-01` → Minuta del **13-04-2026** (presentación inicial).
+
+`MIN-POR-ACT-20260414-01` → Minuta del **14-04-2026** (seguimiento: revisión de insumos, VPN y carpetas compartidas).
 
 ## Archivos
 
-Mismo código en nombre de archivo:
+Mismo código en nombre de archivo (extensión según formato):
 
-`MIN-POR-ACT-20260414-01.md` · `MIN-POR-ACT-20260414-01.pdf`
+`MIN-POR-ACT-20260413-01.md` · `MIN-POR-ACT-20260414-01.md` (y `.pdf` / `.docx` si se exportan).

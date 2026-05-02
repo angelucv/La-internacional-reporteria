@@ -167,7 +167,10 @@ def _parse_simple_md(md_text: str) -> list:
         if not table_rows:
             return
         data = [[Paragraph(_md_inline_to_xml(a), st["small_meta"]) for a in row] for row in table_rows]
-        t = Table(data, colWidths=[1.9 * inch, 4.5 * inch])
+        ncol = max(len(r) for r in table_rows)
+        tw = 6.35 * inch
+        col_widths = [tw / ncol] * ncol
+        t = Table(data, colWidths=col_widths)
         t.setStyle(
             TableStyle(
                 [
@@ -265,7 +268,7 @@ def _cover_block(md_text: str, styles: dict) -> list:
                 story.append(Paragraph(_md_inline_to_xml(sp), styles["cover_sub"]))
             story.append(
                 Paragraph(
-                    "<i>Documento de apoyo al seguimiento de reuniones y reportería actuarial</i>",
+                    "<i>Documento de apoyo al seguimiento de reuniones en el marco del Plan de Optimización y Rentabilidad 2026</i>",
                     styles["cover_line"],
                 )
             )
@@ -348,9 +351,8 @@ def build_pdf(md_path: Path, out_path: Path) -> None:
 
     story: list = _cover_block(md_text, styles)
 
-    # Cuerpo: desde primera ## después de meta
+    # Cuerpo: desde sección 1 (Participantes)
     body_md = md_text
-    # Recortar hasta después de primera tabla de participantes
     if "## 1." in body_md:
         body_md = body_md.split("## 1.", 1)[1]
         body_md = "## 1." + body_md

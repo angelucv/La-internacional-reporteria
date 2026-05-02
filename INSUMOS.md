@@ -9,7 +9,7 @@ Rutas relativas al directorio de este repositorio (`la-internacional-reporteria/
 
 **Rutas absolutas (Windows), por si enlazas desde otra herramienta:**
 
-- `C:\Users\PC\Projects\0-La internacional\Info`
-- `C:\Users\PC\Projects\0-La internacional\Reportes`
+- `<RAÍZ_WORKSPACE>\Info`
+- `<RAÍZ_WORKSPACE>\Reportes`
 
 No es obligatorio duplicar aquí los adjuntos: basta con **referenciar** qué hay en cada carpeta.

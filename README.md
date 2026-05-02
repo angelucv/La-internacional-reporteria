@@ -14,15 +14,17 @@ Este repositorio concentra **notas estructuradas** y **decisiones**; los archivo
 ## Estructura
 
 ```
-reuniones/YYYY/           # Una nota por día (o sesión)
+reuniones/YYYY/           # Minutas: un archivo por sesión (histórico día a día)
 requerimientos/           # REQ-### con estado e historial
 plantillas/               # Copiar para nuevas actas o requerimientos
 promocion-bi/             # CSV o notas sobre qué subir al BI (La-Internacional-BI)
 ```
 
+**Minutas:** cada reunión tiene su propio código `MIN-POR-{MESA}-{AAAAMMDD}-{NN}` (ver **`CODIGOS.md`**). Se **acumulan** en `reuniones/AAAA/`; **no** sustituir minutas ya registradas: si hay más de una sesión el mismo día, incrementar `{NN}` (`02`, `03`…).
+
 ## Flujo sugerido
 
-1. **Diario:** crear o actualizar `reuniones/AAAA/MM-DD-actuarial.md` (o `YYYY-MM-DD-...`).
+1. **Nueva minuta:** crear un **archivo nuevo** con el código que corresponda a la **fecha de la reunión** y el correlativo del día; no reemplazar minutas previas.
 2. **Nuevo pedido:** archivo en `requerimientos/REQ-###-titulo-corto.md`.
 3. **Promoción al BI:** cuando un dato esté listo para el tablero, copiar el CSV a `La-Internacional-BI/data/public/` y registrar en `promocion-bi/README.md` la fecha y el origen.
 
@@ -49,3 +51,7 @@ Por defecto lee `reuniones/2026/MIN-POR-ACT-20260414-01.md` y escribe el **`.pdf
 
 `python scripts/generar_minuta_pdf.py ruta\entrada.md ruta\salida.pdf`  
 `python scripts/generar_minuta_docx.py ruta\entrada.md ruta\salida.docx`
+
+**Reportes de asesoría (PPT por mesa):** tras editar los `.md` en `reuniones/2026/reportes-asesoria/`, regenerar con:
+
+`python scripts/generar_reportes_asesoria_pptx.py`
